@@ -1,0 +1,155 @@
+@import url('http://fonts.cdnfonts.com/css/liberation-serif');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+}
+
+.tab1 p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.tab2 p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.tab3 p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.tab4 p {
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 12px;
+}
+
+.tab1 h2 {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+
+.tab2 h2 {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+
+.tab3 h2 {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+
+.tab4 h2 {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Liberation Serif', sans-serif;
+}
+
+.navegador {
+    background-color: rgb(0, 0, 0);
+    border-radius: 0px 0px 45px 45px;
+    color: #fff;
+    text-align: center;
+}
+
+.logo img {
+    max-width: 8%;
+    max-height: 8%;
+}
+
+.container {
+    width: 100%;
+    max-width: 700px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+.lbl-menu {
+    background: rgb(153, 0, 255);
+    border-radius: 25px 25px 0px 0px;
+}
+
+.lbl-menu label {
+    display: inline-block;
+    padding: 8px;
+    color: rgb(216, 216, 216);
+    cursor: pointer;
+    transition: all 400ms ease;
+}
+
+.lbl-menu label:hover {
+    background: #9e18819c;
+    border-radius: 25px;
+}
+
+.content {
+    position: relative;
+}
+
+.content div {
+    position: absolute;
+    line-height: 1.8;
+    transition: all 600ms ease;
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(0.90);
+    background: #0c0c0c;
+    padding-bottom: 40px;
+    padding: 30px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#radio1,
+#radio2,
+#radio3,
+#radio4 {
+    display: none;
+}
+
+#radio1:checked~.tab1,
+#radio2:checked~.tab2,
+#radio3:checked~.tab3,
+#radio4:checked~.tab4 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1);
+    border-radius: 25px;
+    border-radius: 0px 0px 25px 25px;
+}
+
+.content div:after {
+    position: absolute;
+    content: "";
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid #fff;
+    bottom: 100%;
+    left: 20px;
+}
+
+.content .tab2:after {
+    left: 102px;
+}
+
+.content .tab3:after {
+    left: 222px;
+}
+
+.content .tab4:after {
+    left: 333px;
+}
